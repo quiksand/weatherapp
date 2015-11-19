@@ -1,0 +1,20 @@
+/**
+ * FILENAME:    weather-css.css
+ * DESCRIPTION: This is the CSS for codyschindler.com/fcc/weather.
+ * REQS:        n/a
+ * VERISON:     1.0.0
+ * UPDATED:     2015-11-18
+ * WRITTEN BY:  Cody Schindler (quiksand)
+ * ORGANIZATION: 
+ * CHANGELOG:  
+ * 1.0.0 (2015-11-18): Creation
+**/
+
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	color: #FCF4D9;
+	background-color: #333333;
+}
