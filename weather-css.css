@@ -2,14 +2,14 @@
  * FILENAME:    weather-css.css
  * DESCRIPTION: This is the CSS for codyschindler.com/fcc/weather.
  * REQS:        n/a
- * VERISON:     1.0.0
- * UPDATED:     2015-11-18
+ * VERISON:     1.0.1
+ * UPDATED:     2015-11-24
  * WRITTEN BY:  Cody Schindler (quiksand)
  * ORGANIZATION: 
  * CHANGELOG:  
+ * 1.0.1 (2015-11-24): Launch
  * 1.0.0 (2015-11-18): Creation
 **/
-
 
 html,
 body {
@@ -17,4 +17,70 @@ body {
 	margin: 0;
 	color: #FCF4D9;
 	background-color: #333333;
+	position: static;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+}
+
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+	color: #FCF4D9;
+	text-decoration: none;
+}
+
+.back-button {
+	position: relative;
+	left: 20px;
+	top: 20px;
+}
+
+.bubble {
+	border-radius: 5px;
+	background-color: rgba (0,0,0,0.5);
+	border: 2px solid #f8f8f8;
+	font-size: 2em;
+	margin: 10px;
+	padding: 20px;
+}
+
+.hidden-link {
+	margin: auto;
+}
+
+.icon {
+	padding: 10px;
+	font-size: 3em;
+}
+
+.info-row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.temp {
+	font-size: 3em;
+	padding-bottom: 10px;
+}
+
+.temp:hover {
+	cursor: pointer;
+}
+
+.temprow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titlerow {
+	font-size: 5em !important;
 }

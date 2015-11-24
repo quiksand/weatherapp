@@ -2,11 +2,12 @@
  * FILENAME:    index.html
  * DESCRIPTION: This is the main page for codyschindler.com/fcc/weather.
  * REQS:        Bootstrap (CSS & JS), jQuery, weather-css.css, weather-js.js
- * VERISON:     1.0.0
- * UPDATED:     2015-11-18
+ * VERISON:     1.0.1
+ * UPDATED:     2015-11-24
  * WRITTEN BY:  Cody Schindler (quiksand)
  * ORGANIZATION: n/a
  * CHANGELOG:  
+ * 1.0.1 (2015-11-24): Launch
  * 1.0.0 (2015-11-18): Creation
 -->
 
@@ -53,14 +54,58 @@
 
 <body>
 
-
-
-
-
-
-
-
-
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2">
+        <a class="hidden-xs back-button" href="http://codyschindler.com/#portfolio" title="Back to codyschindler.com">
+          <span class="fa-stack fa-3x">
+            <span class="fa fa-circle-thin fa-stack-2x"></span>
+            <span class="fa fa-arrow-left fa-stack-1x"></span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="row titlerow">
+      Local Weather
+    </div>
+    <div class="row temprow">
+      <div class="icon"></div>
+      <div class="temp"></div>
+    </div>
+    <div class="row error-row">
+      No location data available. Please refresh and allow location data
+    </div>
+    <div class="info-row row hidden-xs">
+      <div class="bubble location">
+      </div>
+      <div class="bubble weather">
+      </div>
+      <div class="bubble wind">
+      </div>
+    </div>
+    <div class="row visible-xs-block">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-2 bubble location">
+      </div>
+      <div class="col-sm-2 bubble weather">
+      </div>
+      <div class="col-sm-2 bubble wind">
+      </div>
+      <div class="col-sm-3">
+      </div>
+    </div>
+    <div class="visible-xs-block hidden-link">
+      <a href="http://codyschindler.com/#portfolio" title="Back to codyschindler.com">
+        <span class="fa fa-arrow-left"></span>
+        Back to codyschindler.com
+      </a>
+    </div>
+    <div class="row">
+      Weather data kindly provided by <a href="http://http://openweathermap.org/">openweathermap.org</a><br>
+      Location data provided by <a href="https://developers.google.com/maps/documentation/geolocation/intro">Google</a>
+    </div>
+  </div>
 
   <!-- load jquery -->
   <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8" defer></script>
